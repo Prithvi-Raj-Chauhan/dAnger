@@ -11,55 +11,19 @@
 
   <body>
     <div class="container">
+      {% for msg in db %}
+        
       <div class="anger">
         <div class="message">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          ab perspiciatis commodi totam quis ea eligendi earum praesentium!
-          Laboriosam, beatae eos ad et magni quibusdam magnam sunt reiciendis
-          officiis vero.
+          {{ msg }}
         </div>
         <div class="info">- Someone</div>
       </div>
-      <div class="anger">
-        <div class="message">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          ab perspiciatis commodi totam quis ea eligendi earum praesentium!
-          Laboriosam, beatae eos ad et magni quibusdam magnam sunt reiciendis
-          officiis vero.
-        </div>
-        <div class="info">- Someone</div>
-      </div>
-      <div class="anger">
-        <div class="message">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          ab perspiciatis commodi totam quis ea eligendi earum praesentium!
-          Laboriosam, beatae eos ad et magni quibusdam magnam sunt reiciendis
-          officiis vero.
-        </div>
-        <div class="info">- Someone</div>
-      </div>
-      <div class="anger">
-        <div class="message">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          ab perspiciatis commodi totam quis ea eligendi earum praesentium!
-          Laboriosam, beatae eos ad et magni quibusdam magnam sunt reiciendis
-          officiis vero.
-        </div>
-        <div class="info">- Someone</div>
-      </div>
-      <div class="anger">
-        <div class="message">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          ab perspiciatis commodi totam quis ea eligendi earum praesentium!
-          Laboriosam, beatae eos ad et magni quibusdam magnam sunt reiciendis
-          officiis vero.
-        </div>
-        <div class="info">- Someone</div>
-      </div>
+      {% endfor %}
     </div>
     <hr />
     <form action="/" id="message-form" method="post">
-      <input type="text" placeholder="Your Message" id="msg">
+      <input type="text" placeholder="Your Message" id="msg" name="msg">
       <button type="submit" id="submit">Submit</button>
     </form>
   </body>
