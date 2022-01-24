@@ -1,0 +1,29 @@
+form{
+    display: flex;
+    background-color: lightgray;
+    height: 4rem;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+form>input{
+    font-size: 2.7rem;
+    margin: 5px;
+    width: 100vw;
+    background-color: rgb(211, 211, 247);
+    border: 2px solid darkslategray;
+    border-radius: 11px;
+    padding: 3px;
+    color: black;
+}
+
+#submit{
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+    background-color: lightblue;
+    border: 2px solid darkslategray;
+    border-radius: 11px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
