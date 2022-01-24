@@ -12,7 +12,7 @@ form>input{
     width: 100vw;
     background-color: rgb(211, 211, 247);
     border: 2px solid darkslategray;
-    border-radius: 11px;
+    border-radius: 11px;    
     padding: 3px;
     color: black;
 }
@@ -26,4 +26,5 @@ form>input{
     margin: 2px;
     font-size: 2.5rem;
     font-weight: bold;
+    cursor: pointer;
 }

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dAnger | Your anger on the web</title>
-    <link rel="stylesheet" href="CSS/container.css" />
-    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/container.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/form.css') }}" />
   </head>
 
   <body>
@@ -58,7 +58,7 @@
       </div>
     </div>
     <hr />
-    <form action="/" id="message-form">
+    <form action="/" id="message-form" method="post">
       <input type="text" placeholder="Your Message" id="msg">
       <button type="submit" id="submit">Submit</button>
     </form>
