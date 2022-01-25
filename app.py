@@ -14,4 +14,4 @@ def dAnger():
     return render_template('index.html', db=DATABASE)
 
 if __name__ == "__main__":
-    app.run(port=8000, debug=True)
+    app.run()
